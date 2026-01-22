@@ -48,3 +48,23 @@ a {
     text-align: center;
     margin-top: 30px;
 }
+
+/* レスポンシブ対応デザイン */
+@media(max-width: 600px){
+    /* メインの画像を2列に表示 */
+    .product-list{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+    .product-list p{
+        font-size: .75rem;
+        line-height: 1.4;
+        margin-top: 3px;
+    }
+    
+    /* サイトのタイトルサイズを少し小さくする */
+    .site-title img{
+        height: 20px;
+        width: auto;
+    }
+}

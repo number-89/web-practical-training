@@ -5,6 +5,7 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 35px;
+    list-style: none;
 }
 
 /* wrapperで表示サイズを調整する */
@@ -19,11 +20,6 @@
     width: 100%;
 }
 
-/* リストマーカーを消す */
-li{
-    list-style: none;
-}
-
 /* ヘッダーを横並びにする */
 #header{
     display: flex;
@@ -33,9 +29,9 @@ li{
 /* フッターを横並びにする */
 #footer .menu{
     display: flex;
+    list-style: none;
 }
 
 .menu li{
-    
     margin-right: 15px;
 }

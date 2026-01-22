@@ -42,3 +42,9 @@ a {
     margin-right: 15px;
 }
 
+/* View Moreを中央に表示 */
+.link-text{
+    display: block;
+    text-align: center;
+    margin-top: 30px;
+}

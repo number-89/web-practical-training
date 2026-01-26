@@ -117,6 +117,9 @@ a {
 
 /* ----------レスポンシブ対応デザイン---------- */
 @media(max-width: 600px){
+    /* ヘッダー */
+    /* フッター */
+
     /* メインの画像を2列に表示 */
     .product-list{
         grid-template-columns: repeat(2, 1fr);
@@ -132,5 +135,19 @@ a {
     .site-title img{
         height: 20px;
         width: auto;
+    }
+
+    /* ----------item---------- */
+    #item{
+        flex-direction: column;
+        width: auto;
+    }
+
+    #item div{
+        width: auto;
+    }
+
+    .item-text{
+        margin-left: auto;
     }
 }

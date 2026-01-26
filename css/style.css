@@ -1,12 +1,6 @@
 @charset "utf-8";
 
-/* メインの画像をグリッドの配置にする */
-.product-list{
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 35px;
-    list-style: none;
-}
+/* ----------全体---------- */
 
 /* リンクの下線を表示しない */
 a {
@@ -21,16 +15,22 @@ a {
     margin: 0 auto;
     padding: 0 40px;
 }
-/* 画像サイズを調整 */
-.product-list img{
-    width: 100%;
-}
+
+/* ----------ヘッダー---------- */
 
 /* ヘッダーを横並びにする */
 #header{
     display: flex;
     justify-content: space-between;
+    padding: .5rem 4rem;
 }
+
+/* ロゴのサイズ調整 */
+.site-title img{
+    width: 70%;
+}
+
+/* ----------フッター---------- */
 
 /* フッターを横並びにする */
 #footer .menu{
@@ -42,14 +42,80 @@ a {
     margin-right: 15px;
 }
 
-/* View Moreを中央に表示 */
+#footer{
+    margin: 3rem auto 1rem;
+}
+
+/* リンクテキストを中央に表示 */
 .link-text{
     display: block;
     text-align: center;
     margin-top: 30px;
 }
 
-/* レスポンシブ対応デザイン */
+/* ----------index---------- */
+
+/* 画像をグリッドの配置にする */
+.product-list{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 35px;
+    list-style: none;
+}
+
+/* 画像サイズを調整 */
+.product-list img{
+    width: 100%;
+}
+
+/* ----------item---------- */
+/* 画像とテキストを横並びに */
+#item{
+    display: flex;
+    margin: 1rem auto 1rem 0;
+    width: 70%;
+}
+
+.content{
+    margin: 2rem auto;
+}
+
+#item div{
+    width: 50%;
+}
+
+/* 画像サイズの調整 */
+.item-img img{
+    width: 100%;
+}
+
+/* 画像とテキストの間隔をあける */
+.item-text{
+    margin-left: 4rem;
+}
+
+/* テキストの下に余白を入れる */
+.item-text *{
+    margin-bottom: 2rem;
+}
+
+/* プロダクトタイトルのサイズを調整 */
+.page-title{
+    font-size: 100%;
+}
+
+/* テーブル */
+.item-text th{
+    font-weight: normal;
+    text-align: left;
+}
+
+.item-text td{
+    padding-left: 1rem;
+}
+
+
+/* ----------レスポンシブ対応デザイン---------- */
 @media(max-width: 600px){
     /* メインの画像を2列に表示 */
     .product-list{

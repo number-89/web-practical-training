@@ -194,6 +194,11 @@ a {
         width: auto;
     }
 
+    .page-title{
+        font-size: 100%;
+        margin-bottom: 30px;
+    }
+
     /* ----------item---------- */
     #item{
         flex-direction: column;
@@ -206,5 +211,33 @@ a {
 
     .item-text{
         margin-left: auto;
+    }
+
+    /* ----------Company---------- */
+    #company .info{
+        width: 100%;
+    }
+
+    #company .info tr{
+        display: grid;
+    }
+
+    #company .info th{
+        border-bottom: none;
+        padding-bottom: 0;
+    }
+
+    #company .info td{
+        padding-top: 10px;
+        width: 100%;
+    }
+
+    /* マップのサイズを調整 */
+    #company .map iframe{
+        width: 100%;
+    }
+
+    #company .map{
+        margin-bottom: 30px;
     }
 }

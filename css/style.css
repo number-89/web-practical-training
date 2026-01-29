@@ -16,6 +16,12 @@ a {
     padding: 0 40px;
 }
 
+/* ページタイトルのサイズを調整 */
+.page-title{
+    font-size: 120%;
+    margin-bottom: 50px;
+}
+
 /* ----------ヘッダー---------- */
 
 /* ヘッダーを横並びにする */
@@ -98,11 +104,6 @@ a {
     margin-bottom: 2rem;
 }
 
-/* プロダクトタイトルのサイズを調整 */
-.page-title{
-    font-size: 100%;
-}
-
 /* テーブル */
 .item-text th{
     font-weight: normal;
@@ -132,20 +133,29 @@ a {
 }
 
 /* ----------Company---------- */
-/* サイズ調整 */
 #company .info{
     border-collapse: collapse;
     width: 60%;
+    margin-bottom: 20px;
 }
 
 /* 下線を引く */
 #company .info th,
 #company .info td{
+    border-bottom: 1px solid #dcdbdb;
+    padding: 20px 10px;
+    font-size: 14px;
+}
+
+#company .info th{
     font-weight: normal;
     text-align: left;
     vertical-align: top;
-    border-bottom: 1px solid grey;
-    padding: 20px 10px;
+    width: 30%;
+}
+
+#company .info td{
+    width: 70%;
 }
 
 /* 一番下の下線を削除 */
@@ -157,6 +167,12 @@ a {
 /* マップのサイズを調整 */
 #company .map iframe{
     width: 60%;
+    height: 300px;
+}
+
+#company .map{
+    filter: grayscale(1);
+    margin-bottom: 100px;
 }
 
 /* ----------レスポンシブ対応デザイン---------- */

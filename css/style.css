@@ -113,6 +113,23 @@ a {
     padding-left: 1rem;
 }
 
+/* ----------about---------- */
+#about-page{
+    height: 100vh;
+}
+
+#test-btn{
+    background-color: lightblue;
+    padding: .5rem 2.5rem;
+    border-radius: 5%;
+    z-index: 5;
+}
+
+.about-footer{
+    /* フッターの位置を下に固定(後で消す可能性　大) */
+    position: fixed;
+    bottom: 0;
+}
 
 /* ----------レスポンシブ対応デザイン---------- */
 @media(max-width: 600px){

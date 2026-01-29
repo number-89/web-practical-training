@@ -131,6 +131,34 @@ a {
     bottom: 0;
 }
 
+/* ----------Company---------- */
+/* サイズ調整 */
+#company .info{
+    border-collapse: collapse;
+    width: 60%;
+}
+
+/* 下線を引く */
+#company .info th,
+#company .info td{
+    font-weight: normal;
+    text-align: left;
+    vertical-align: top;
+    border-bottom: 1px solid grey;
+    padding: 20px 10px;
+}
+
+/* 一番下の下線を削除 */
+#company .info tr:last-child td,
+#company .info tr:last-child th{
+    border-bottom: none;
+}
+
+/* マップのサイズを調整 */
+#company .map iframe{
+    width: 60%;
+}
+
 /* ----------レスポンシブ対応デザイン---------- */
 @media(max-width: 600px){
     /* メインの画像を2列に表示 */

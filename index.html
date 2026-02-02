@@ -15,15 +15,40 @@
 
         <!-- JavaScript -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <script src="js/main.js"></script>
+        <script src="js/main.js" defer></script>
     </head>
     <body>
         <header id="header" class="wrapper">
             <h1 class="site-title">
                 <a href="index.html"><img src="img/logo.svg" alt="Furniture Design"></a>
             </h1>
+            <!-- ハンバーガーメニュー -->
             <nav>
-                三
+                <!-- 閉じている状態 -->
+                <button type="button" id="menu-open" class="btn-menu">
+                    <!-- ハンバーガー用の三本線 -->
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+
+                <!-- 開いている状態 -->
+                <div id="menu-panel">
+                    <button type="button" id="menu-close" class="btn-menu">
+                        <!-- ハンバーガー用の三本線 -->
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                    <!-- ナビゲーションの中身 -->
+                    <ul class="menu-list">
+                        <li><a href="#">Online Shop</a></li>
+                        <li><a href="#">X(Twitter)</a></li>
+                        <li><a href="#">YouTube</a></li>
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
             </nav>
         </header>
         <main>

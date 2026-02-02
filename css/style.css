@@ -119,9 +119,7 @@ a {
 }
 
 .menu-list a{
-    font-size: 2rem;
     text-decoration: none; /*リンクのアンダーバーを削除*/
-    color: var(--light-grey); /*文字色を茶色に*/
 }
 
 /* ----------フッター---------- */

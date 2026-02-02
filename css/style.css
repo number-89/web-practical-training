@@ -262,6 +262,49 @@ a {
     margin-bottom: 100px;
 }
 
+/* ----------Contact---------- */
+#contact-form{
+    max-width: 600px;
+}
+
+#contact-form input{
+    border: 1px solid #dcdbdb;
+    width: 100%;
+    padding: .75rem;
+}
+
+/* contact-form 内のチェックボックスとラジオボタン専用の調整 */
+#contact-form input[type="checkbox"],
+#contact-form input[type="radio"] {
+
+    /* width: 100% などの共通指定を打ち消し、
+     チェックボックス本来のサイズに戻す */
+    width: auto;
+
+    /* 他の input に指定している padding を無効化し、
+     余白によるズレを防ぐ */
+    padding: 0;
+
+    /* テキスト入力用の枠線が
+     チェックボックスに適用されないようにする */
+    border: 0;
+}
+
+#contact-form select[name="inquire"]{
+    width: 100%;
+    border: 1px solid #dcdbdb;
+    padding: .75rem;
+}
+
+#contact-form textarea{
+    width: 100%;
+    border: 1px solid #dcdbdb;
+    padding: .75rem;
+}
+
+#contact-form input[name="consent"]{
+    margin: 1.5rem 0;
+}
 /* ----------レスポンシブ対応デザイン---------- */
 @media(max-width: 600px){
     /* メインの画像を2列に表示 */
